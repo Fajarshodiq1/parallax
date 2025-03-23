@@ -1,156 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+    <meta charset="utf-8" />
+    <title>Untitled Document</title>
     <style>
-      /* Pendekatan berganda untuk parallax */
-      .parallax-section {
-        /* Versi CSS dasar - bekerja di sebagian besar desktop */
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
+      .inspire {
+        background-image: url("http://i.imgur.com/EXfjCjv.jpg");
       }
-      
-      /* Desktop: gunakan fixed background */
-      @media (min-width: 769px) {
-        .parallax-section {
-          background-attachment: fixed;
-        }
-      }
-      
-      /* Mobile: gunakan scroll background dan JS parallax */
-      @media (max-width: 768px) {
-        .parallax-section {
-          background-attachment: scroll;
-        }
-        
-        .content-card {
-          width: 90% !important;
-          margin: 0 auto;
-        }
-        
-        .parallax-section {
-          padding: 2rem 0;
-        }
-      }
-      
-      /* Pastikan gambar latar belakang selalu mengisi area */
-      .parallax-bg {
-        position: absolute;
-        top: 0;
-        left: 0;
+      .container {
         width: 100%;
-        height: 100%;
-        z-index: -1;
-        background-position: center;
+        text-align: center;
+      }
+      .parallax-section {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -ms-background-size: cover;
         background-size: cover;
+        color: #fff;
+      }
+      .parallax-content {
+        padding: 120px 0 105px 0;
+        background: #000;
+        background: rgba(0, 0, 0, 0.6);
+      }
+      .parallax-content h2 {
+        font-size: 36px;
+        font-size: 3.6rem;
+        margin: 65px 0 80px 0;
       }
     </style>
-    <title>Tailwind Parallax</title>
   </head>
+
   <body>
-    <!-- Section Parallax dengan Konten 2 Kolom -->
-    <div class="h-[1000px]"></div>
-    
-    <section class="parallax-section min-h-screen flex items-center justify-center relative">
-      <!-- Layer gambar parallax yang akan dikendalikan JS -->
-      <div 
-        class="parallax-bg rellax" 
-        data-rellax-speed="-3"
-        style="background-image: url('https://img.jakpost.net/c/2016/11/27/2016_11_27_16687_1480253269._large.jpg');">
-      </div>
-      
-      <div class="absolute inset-0 bg-black bg-opacity-30"></div>
-      
-      <div class="container mx-auto px-4 relative z-10">
-        <div
-          class="content-card flex flex-col md:flex-row items-center justify-between bg-white bg-opacity-90 rounded-lg shadow-xl overflow-hidden max-w-4xl mx-auto"
-        >
-          <!-- Kolom Kiri - Paragraf -->
-          <div class="w-full md:w-1/2 p-6 md:p-12">
-            <h2
-              class="text-2xl sm:text-3xl font-bold text-gray-800 mb-4 md:mb-6"
-            >
-              Transformasi Digital
-            </h2>
-            <p class="text-base sm:text-lg text-gray-700 leading-relaxed">
-              Transformasi digital di Indonesia telah mengubah cara hidup
-              masyarakat. Inovasi teknologi memberikan dampak signifikan pada
-              ekonomi nasional, pendidikan, dan layanan publik. Pertumbuhan ini
-              didukung oleh kebijakan pemerintah dan investasi sektor swasta.
-            </p>
-          </div>
-          
-          <!-- Kolom Kanan - Statistik -->
-          <div class="w-full md:w-1/2 bg-blue-900 text-white p-6 md:p-12">
-            <h3
-              class="text-xl sm:text-2xl font-semibold mb-6 md:mb-8 text-blue-100"
-            >
-              Data Statistik
-            </h3>
-            
-            <!-- Statistik 1 -->
-            <div class="mb-8 md:mb-10">
-              <div class="text-4xl md:text-5xl font-bold text-blue-200 mb-2">
-                85%
-              </div>
-              <h4 class="text-lg md:text-xl font-medium text-blue-100 mb-1">
-                Pertumbuhan Digital
-              </h4>
-              <p class="text-sm md:text-base text-blue-200">
-                Peningkatan adopsi teknologi digital dalam 5 tahun terakhir
-              </p>
-            </div>
-            
-            <!-- Statistik 2 -->
-            <div>
-              <div class="text-4xl md:text-5xl font-bold text-blue-200 mb-2">
-                2.7x
-              </div>
-              <h4 class="text-lg md:text-xl font-medium text-blue-100 mb-1">
-                Multiplier Effect
-              </h4>
-              <p class="text-sm md:text-base text-blue-200">
-                Dampak ekonomi dari investasi teknologi terhadap PDB nasional
-              </p>
-            </div>
-          </div>
+    <p>scroll</p>
+    <p>scroll</p>
+    <p>scroll</p>
+    <p>scroll</p>
+    <p>scroll</p>
+    <p>scroll</p>
+    <p>scroll</p>
+    <p>scroll</p>
+    <p>scroll</p>
+    <p>scroll</p>
+    <p>scroll</p>
+    <p>scroll</p>
+    <p>scroll</p>
+    <p>scroll</p>
+    <p>scroll</p>
+    <p>scroll</p>
+    <p>scroll</p>
+    <p>scroll</p>
+    <div class="inspire parallax-section">
+      <div class="parallax-content">
+        <div class="container">
+          <h2>
+            A brand is no longer what we tell the consumer it is – it is what
+            consumers tell each other it is.
+          </h2>
         </div>
       </div>
-    </section>
-    
-    <div class="h-[1000px]"></div>
-    
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-4">
-      <div class="container mx-auto px-4 text-center">
-        <p>&copy; 2025 Data Statistik Indonesia</p>
-      </div>
-    </footer>
-    
-    <!-- Inisialisasi Rellax untuk efek parallax -->
-    <script>
-      // Tunggu hingga dokumen dimuat penuh
-      document.addEventListener('DOMContentLoaded', function() {
-        // Deteksi apakah perangkat mobile
-        var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-        
-        // Jika mobile, gunakan kecepatan yang lebih lambat
-        if (isMobile) {
-          var rellax = new Rellax('.rellax', {
-            speed: -1,
-            center: true,
-            mobile: true,
-          });
-        } else {
-          // Jika desktop, gunakan kecepatan default
-          var rellax = new Rellax('.rellax');
-        }
-      });
-    </script>
+    </div>
+    <!-- end inspire -->
+    <p>scroll</p>
+    <p>scroll</p>
+    <p>scroll</p>
+    <p>scroll</p>
+    <p>scroll</p>
+    <p>scroll</p>
+    <p>scroll</p>
+    <p>scroll</p>
+    <p>scroll</p>
+    <p>scroll</p>
+    <p>scroll</p>
+    <p>scroll</p>
+    <p>scroll</p>
+    <p>scroll</p>
+    <p>scroll</p>
+    <p>scroll</p>
+    <p>scroll</p>
+    <p>scroll</p>
+    <p>scroll</p>
+    <p>scroll</p>
+    <p>scroll</p>
   </body>
 </html>
