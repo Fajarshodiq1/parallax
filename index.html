@@ -11,6 +11,18 @@
         background-repeat: no-repeat;
         background-size: cover;
       }
+
+      /* Perbaikan dimensi untuk perangkat mobile */
+      @media (max-width: 768px) {
+        .content-card {
+          width: 90% !important;
+          margin: 0 auto;
+        }
+
+        .parallax-section {
+          padding: 2rem 0;
+        }
+      }
     </style>
     <title>Tailwind</title>
   </head>
@@ -23,16 +35,19 @@
         background-image: url('https://img.jakpost.net/c/2016/11/27/2016_11_27_16687_1480253269._large.jpg');
       "
     >
+      <div class="absolute inset-0 bg-black bg-opacity-30"></div>
       <div class="container mx-auto px-4 relative z-10">
         <div
-          class="flex flex-col md:flex-row items-center justify-between bg-white bg-opacity-90 rounded-lg shadow-xl overflow-hidden"
+          class="content-card flex flex-col md:flex-row items-center justify-between bg-white bg-opacity-90 rounded-lg shadow-xl overflow-hidden max-w-4xl mx-auto"
         >
           <!-- Kolom Kiri - Paragraf -->
-          <div class="w-full md:w-1/2 p-8 md:p-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6">
+          <div class="w-full md:w-1/2 p-6 md:p-12">
+            <h2
+              class="text-2xl sm:text-3xl font-bold text-gray-800 mb-4 md:mb-6"
+            >
               Transformasi Digital
             </h2>
-            <p class="text-lg text-gray-700 leading-relaxed">
+            <p class="text-base sm:text-lg text-gray-700 leading-relaxed">
               Transformasi digital di Indonesia telah mengubah cara hidup
               masyarakat. Inovasi teknologi memberikan dampak signifikan pada
               ekonomi nasional, pendidikan, dan layanan publik. Pertumbuhan ini
@@ -41,29 +56,35 @@
           </div>
 
           <!-- Kolom Kanan - Statistik -->
-          <div class="w-full md:w-1/2 bg-blue-900 text-white p-8 md:p-12">
-            <h3 class="text-2xl font-semibold mb-8 text-blue-100">
+          <div class="w-full md:w-1/2 bg-blue-900 text-white p-6 md:p-12">
+            <h3
+              class="text-xl sm:text-2xl font-semibold mb-6 md:mb-8 text-blue-100"
+            >
               Data Statistik
             </h3>
 
             <!-- Statistik 1 -->
-            <div class="mb-10">
-              <div class="text-5xl font-bold text-blue-200 mb-2">85%</div>
-              <h4 class="text-xl font-medium text-blue-100 mb-1">
+            <div class="mb-8 md:mb-10">
+              <div class="text-4xl md:text-5xl font-bold text-blue-200 mb-2">
+                85%
+              </div>
+              <h4 class="text-lg md:text-xl font-medium text-blue-100 mb-1">
                 Pertumbuhan Digital
               </h4>
-              <p class="text-blue-200">
+              <p class="text-sm md:text-base text-blue-200">
                 Peningkatan adopsi teknologi digital dalam 5 tahun terakhir
               </p>
             </div>
 
             <!-- Statistik 2 -->
             <div>
-              <div class="text-5xl font-bold text-blue-200 mb-2">2.7x</div>
-              <h4 class="text-xl font-medium text-blue-100 mb-1">
+              <div class="text-4xl md:text-5xl font-bold text-blue-200 mb-2">
+                2.7x
+              </div>
+              <h4 class="text-lg md:text-xl font-medium text-blue-100 mb-1">
                 Multiplier Effect
               </h4>
-              <p class="text-blue-200">
+              <p class="text-sm md:text-base text-blue-200">
                 Dampak ekonomi dari investasi teknologi terhadap PDB nasional
               </p>
             </div>
